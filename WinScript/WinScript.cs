@@ -22,13 +22,18 @@
             var exports = {};
             function $echo(x, title) { _globals.echo(x, title); }
             function $log(x, title) { _globals.log(x, title); }
-            //var $getenv = _globals.getenv;
+            //$array = _globals.array;
+                        //var $getenv = _globals.getenv;
 
             """);
         }
     }
     public class WintScriptGlobal
     {
+        public dynamic array(params object[] args)
+        {
+            return NewArray(args);
+        }
         public void echo(params object[] args)
         {
             var x = args[0];
