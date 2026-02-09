@@ -85,9 +85,12 @@ using (var engine = new WinScript())
 
     engine.Execute("console.log(123);");
     engine.Execute("console.log(456, 'title');");
-    engine.Execute("$echo(123);");
-    engine.Execute("$echo(456, 'title');");
+    engine.Execute("$$.echo(123);");
+    engine.Execute("$$.echo(456, 'title');");
     engine.Execute("""
-        $log(_globals.array(11, "abc", null));
+        $$.log($$.array(11, "abc", null));
+        """);
+    engine.Execute("""
+        $$.log($$.object("n", 11, "s", "abc", "NULL", null));
         """);
 }

@@ -2,7 +2,7 @@
 	<PropertyGroup>
 		<LangVersion>latest</LangVersion>
 		<TargetFrameworks>net462;net8.0-windows</TargetFrameworks>
-		<Version>0.0.0.0</Version>
+		<Version>2026.0210.0816.18</Version>
 		<Nullable>enable</Nullable>
 		<ImplicitUsings>disable</ImplicitUsings>
 		<RootNamespace>WinScript</RootNamespace>
@@ -56,7 +56,7 @@
 		<PackageReference Include="System.Dynamic.Runtime" Version="4.3.0" />
 	</ItemGroup>
 	<ItemGroup>
-	  <PackageReference Include="EasyObject" Version="2026.209.1745.17" />
+	  <PackageReference Include="EasyObject" Version="2026.210.736.41" />
 	  <PackageReference Include="Microsoft.ClearScript.Windows" Version="7.5.0" />
 	</ItemGroup>
 </Project>

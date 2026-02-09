@@ -16,23 +16,23 @@
             // expose entire assemblies
             engine.AddHostObject("lib", new HostTypeCollection("mscorlib", "System.Core", "EasyObject"));
             //
-            engine.AddHostObject("_globals", new WintScriptGlobal());
+            engine.AddHostObject("$$", new WintScriptGlobal());
             engine.AddHostObject("console", new WinScriptConsole());
             engine.Execute("""
             var exports = {};
-            function $echo(x, title) { _globals.echo(x, title); }
-            function $log(x, title) { _globals.log(x, title); }
-            //$array = _globals.array;
-                        //var $getenv = _globals.getenv;
 
             """);
         }
     }
     public class WintScriptGlobal
     {
-        public dynamic array(params object[] args)
+        public dynamic @array(params object[] args)
         {
             return NewArray(args);
+        }
+        public dynamic @object(params object[] args)
+        {
+            return NewObject(args);
         }
         public void echo(params object[] args)
         {
