@@ -1,6 +1,6 @@
-﻿//css_nuget Microsoft.ClearScript.Windows@7.5.0
-//css_nuget EasyObject@2026.209.112.40
-// //css_nuget EasyScript@2026.209.133.11
+?//+#nuget Microsoft.ClearScript.Windows@7.5.0
+//+#nuget EasyObject@2026.209.112.40
+// //+#nuget EasyScript@2026.209.133.11
 
 using System;
 using Microsoft.ClearScript;
